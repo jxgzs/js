@@ -1,2 +1,2 @@
 # js
-CND
+CDN
