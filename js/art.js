@@ -238,6 +238,15 @@ var EC = {
                         },
                     },
                 ],
+    		    contextmenu: [
+        		  {
+            		 html: '纽约影院--海外华人在线影院',
+            		 click: function (contextmenu) {
+                		 console.info('https://nycvod.com');
+                		 contextmenu.show = false;
+            	     },
+       		  },
+    		     ],
                 plugins: [
                     artplayerPluginDanmuku({
                         danmuku: config.api+'/art/id/'+config.id+'.xml',
