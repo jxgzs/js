@@ -315,17 +315,6 @@ var EC = {
         }
         EC.ad.controls.add({
             disable: false,
-            name: 'list',
-            index: 10,
-            position: 'right',
-            html: '列表',
-            tooltip: '打开选集列表',
-            click: function () {
-                EC.ecList.initial();
-            },
-        });
-        EC.ad.controls.add({
-            disable: false,
             name: 'danmu',
             index: 11,
             position: 'right',
