@@ -238,15 +238,6 @@ var EC = {
                         },
                     },
                 ],
-    		    contextmenu: [
-        		  {
-            		 html: '纽约影院--海外华人在线影院',
-            		 click: function (contextmenu) {
-                		 console.info('https://nycvod.com');
-                		 contextmenu.show = false;
-            	     },
-       		  },
-    		     ],
                 plugins: [
                     artplayerPluginDanmuku({
                         danmuku: config.api+'/art/id/'+config.id+'.xml',
@@ -322,6 +313,17 @@ var EC = {
                 EC.MYad.pause.play(config.ads.pause.link, config.ads.pause.img);
             });
         }
+        EC.ad.controls.add({
+            disable: false,
+            name: 'list',
+            index: 10,
+            position: 'right',
+            html: '列表',
+            tooltip: '打开选集列表',
+            click: function () {
+                EC.ecList.initial();
+            },
+        });
         EC.ad.controls.add({
             disable: false,
             name: 'danmu',
